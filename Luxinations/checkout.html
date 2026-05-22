@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxinations | Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Lux<span>inations</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+</header>
+
+<section>
+  <h1 class="section-title">Checkout</h1>
+
+  <form>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="product">Select Product</label>
+    <select id="product" name="product" required>
+      <option value="">Choose a product</option>
+      <option>RGB Gaming Keyboard - P450</option>
+      <option>Gaming Mouse - P250</option>
+      <option>Gaming Headset - P600</option>
+      <option>Wireless Controller - P550</option>
+      <option>Large Mouse Pad - P180</option>
+      <option>Gaming Chair - P1500</option>
+    </select>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <label for="address">Delivery Address</label>
+    <textarea id="address" name="address" required></textarea>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" required>
+      <option value="">Choose payment method</option>
+      <option>Cash on Delivery</option>
+      <option>Card Payment</option>
+      <option>Mobile Money</option>
+    </select>
+
+    <br><br>
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Luxinations. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
